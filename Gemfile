@@ -8,7 +8,7 @@ gem 'rails', '3.2.13'
 group :development do
 
 gem 'sqlite3'
-
+gem "eventmachine", "1.0.3"#, :group => [:development, :test]
 end
 
 gem 'geocoder'
@@ -30,9 +30,9 @@ gem 'jquery-rails'
 group :production do
 
  gem 'pg' 
- gem 'thin'
+ gem 'thin', '1.3.1'
  gem 'rails_12factor'
- gem 'eventmachine', '1.0.0'
+ 
 end
 
 # To use ActiveModel has_secure_password
