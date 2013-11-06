@@ -116,7 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  eventmachine
+  eventmachine (= 1.0.0)
   geocoder
   jquery-rails
   pg

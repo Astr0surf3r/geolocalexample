@@ -32,7 +32,7 @@ group :production do
  gem 'pg' 
  gem 'thin'
  gem 'rails_12factor'
- gem 'eventmachine'
+ gem 'eventmachine', '1.0.0'
 end
 
 # To use ActiveModel has_secure_password
