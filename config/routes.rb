@@ -1,4 +1,7 @@
 Geo::Application.routes.draw do
+  resources :visits
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
