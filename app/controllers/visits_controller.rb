@@ -25,7 +25,7 @@ class VisitsController < ApplicationController
   # GET /visits/new.json
   def new
     @visit = Visit.new
-    #result = request.location
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @visit }
