@@ -24,11 +24,11 @@ class VisitsController < ApplicationController
   # GET /visits/new
   # GET /visits/new.json
   def new
-    result = request.ip
-    city = request.location.city
-    country = request.location.country
+    @ip = request.remote_ip
+    @city = request.location.city
+    @country = request.location.country
     @visit = Visit.new
-    @visit.save(:ipaddress => result, :city => city, :country => country)
+    @visit.save(:ipaddress => @result, :city => @city, :country => @country)
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @visit }

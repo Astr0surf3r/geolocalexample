@@ -4,7 +4,7 @@ class Visit < ActiveRecord::Base
 #=begin
   geocoded_by :ipaddress,
   
-     :city => :ip_lookup
+     :city => :city, :country => :country
   
   after_validation :geocode
 #=end

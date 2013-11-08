@@ -3,10 +3,10 @@
 Hola!
 
 
-your IP ADDRESS is: <%= request.ip %> <br />
+your IP ADDRESS is: <%= @ip %> <br />
 
-your CITY is :<%= request.location.city %> <br />
+your CITY is :<%= @city %> <br />
 
-YOUR COUNTRY is: <%= request.location.country %>
+YOUR COUNTRY is: <%= @country %>
 
 <%= link_to 'Back', visits_path %>
