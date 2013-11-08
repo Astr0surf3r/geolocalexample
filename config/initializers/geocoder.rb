@@ -1,7 +1,7 @@
 # config/initializers/geocoder.rb
 Geocoder.configure(
   # geocoding service
-  lookup: :google,
+  lookup: :freegeoip,
 
   # geocoding service request timeout (in seconds)
   timeout: 3,
