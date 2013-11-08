@@ -25,8 +25,8 @@ class VisitsController < ApplicationController
   # GET /visits/new.json
   def new
     result = request.ip
-    city = location.city
-    country = location.country
+    city = request.location.city
+    country = request.location.country
     @visit = Visit.new
     @visit.save(:ipaddress => result, :city => city, :country => country)
     respond_to do |format|
